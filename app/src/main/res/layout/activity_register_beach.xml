@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterBeachActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        />
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_rg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"
+            android:textSize="38dp"
+            android:text="Welcome to the Smart Beach" />
+
+        <Button
+            android:id="@+id/btn_rg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:text="Book a beach area"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/exit"-->
+<!--        android:layout_width="92dp"-->
+<!--        android:layout_height="61dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center|bottom"-->
+<!--        android:text="开始预定沙滩位置"-->
+<!--        android:textColor="@color/blue"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteY="593dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

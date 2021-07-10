@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.myhelloworldapplication.WeatherActivity">
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/radar_test"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="2">
+    </com.github.mikephil.charting.charts.RadarChart>
+
+    <com.example.myhelloworldapplication.MyLineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_weight="5"
+        android:gravity="bottom"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="hide/show"
+            />
+
+
+        <Button
+            android:id="@+id/btn_slide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="slide"/>
+
+        <Button
+            android:id="@+id/btn_get_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text="get data"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

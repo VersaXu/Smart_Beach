@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_password_first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="New Password: "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_password_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_password_first"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="Enter"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:textColor="@color/black"
+
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_password_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="Confirm:             "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_password_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_password_second"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="Enter"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:textColor="@color/black"
+
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="Verifycode:        "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_verifycode" >
+
+            <EditText
+                android:id="@+id/et_verifycode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editext_selector"
+                android:gravity="left|center"
+                android:hint="Enter"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="@color/black"
+
+                android:textCursorDrawable="@drawable/text_cursor"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn_verifycode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="Get verify code"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:text="Determine"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myhelloworldapplication">
+    <!-- SD卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 网络权限 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".RegisterFinishActivity"></activity>
+        <activity android:name=".RegisterAdditionalServicesActivity" />
+        <activity android:name=".RegisterSelect_SwitchActivity" />
+        <activity android:name=".runmap1" />
+        <activity android:name=".RegisterSelect_MainActivity" />
+        <activity android:name=".TestJSONActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".MainApplication" /> <!-- SD卡读取权限 -->
+        <activity android:name=".MenuOptionActivity" />
+        <activity android:name=".OrderDetailActivity" />
+        <activity android:name=".OrderChannelActivity" />
+        <activity android:name=".login_forget" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".runmap2" />
+        <activity android:name=".Main2Activity"/>
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".login_main_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

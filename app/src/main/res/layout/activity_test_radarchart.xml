@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/radar_test"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </com.github.mikephil.charting.charts.RadarChart>
+
+</LinearLayout>
