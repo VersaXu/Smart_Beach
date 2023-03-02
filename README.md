@@ -1,3 +1,4 @@
 # Smart_Beach
-Updated now It is an Android app written by Android Studio. The main functionalities are login/logout, reserve a particular region of beach and services, order drinks and weather monitoring. It's a stand-alone app because we just download the json file from thingspeak to the local but not using HTTP to get online data. This project mainly consists of build configuration, libraries import, assets, java&&Kotlin codes, res(resources) and AndroidManifest.xml. The layouts and other foreground objects are stored in resources to develop the pages, and java and Kotlin files are used to develop background system to control the action of pages. And define or store the global settings and libraries dependencies in manifest file, libs respectively.
+Used Android studio as the development platform and JAVA programming language as the basis
+Used SDK to simulate environment to design a series of display pages such as login, home page, online product ordering, online beach tool rental, beach area selection, current weather alert, etc., and designed and developed interaction logic and user database; finally tested the app online and packaged it
 xx
